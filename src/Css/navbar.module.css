@@ -1,0 +1,82 @@
+.main_nav{
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #dfdfdf ;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: var(--desktop-nav-height);
+    position: fixed;
+    top: 0;
+    transition: all 1s ease-in-out;
+    width: 100%;
+    z-index: 3;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin: auto;
+}
+
+.insta_image{
+    width: 120px;
+    height: 60px;
+}
+.search_bar{
+    display: flex;
+    align-items: center;
+    background-color:#efefef;
+    border-radius: 10px;
+    height: 25px;
+    padding: 5px;
+}
+
+.search_bar > input {
+   outline: none;
+   border: none;
+   background: none;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+.login_signup{
+   display: flex;
+   gap: 10px;
+}
+
+.login_signup >button:first-child{
+    font-weight: 600;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    line-height: 18px;
+    background-color: #0095f6;
+    padding: 9px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 69px;
+ }
+
+ .login_signup >button:first-child:hover{
+    background-color:#1877f2;
+    cursor: pointer;
+ }
+
+ .login_signup >button:last-child{
+    font-weight: 600;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    line-height: 18px;
+    background: none;
+    color: #0095f6;
+    border: none;
+ }
+ .login_signup >button:last-child:hover{
+    opacity: .7;
+    cursor: pointer;
+ }

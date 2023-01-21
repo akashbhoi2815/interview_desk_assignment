@@ -1,0 +1,15 @@
+.footer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin: auto;
+}
+.footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 70vw;
+    margin: auto;
+}

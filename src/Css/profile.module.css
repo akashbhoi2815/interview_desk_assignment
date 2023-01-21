@@ -1,0 +1,87 @@
+.profile {
+  width: 70vw;
+  margin: auto;
+  position: relative;
+  top: 70px;
+  font-family: "Segoe UI";
+}
+.header {
+  border-bottom: 1px solid #dfdfdf;
+  display: flex;
+  height: 215px;
+}
+.profile_image_div {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.profile_info {
+  width: 70%;
+}
+.profile_info_username {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-weight: 600;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  line-height: 18px;
+}
+.profile_info_username > div > button {
+  margin: 5px;
+  padding: 6px;
+  border: none;
+  border-radius: 8px;
+  width: 83px;
+  font-weight: 600;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.profile_info_username > div > button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.profile_info_follow {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.profile_info_follow p:hover{
+    cursor: pointer;
+    opacity: 0.7;
+  }
+.profile_info_follow span {
+  font-weight: 600;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  line-height: 18px;
+}
+.profile_info_data {
+  text-align: initial;
+}
+
+.profile_info_data > div > span:first-child {
+  font-weight: 600;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  line-height: 18px;
+}
+.profile_info_data > div > span:last-child {
+  font-weight: 600;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  line-height: 18px;
+  color: #09467a;
+}
+.profile_info_data > div > span:last-child:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
