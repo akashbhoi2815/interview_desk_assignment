@@ -9,7 +9,7 @@ function Posts() {
   const [page, setPage] = useState(1);
   // calling the initial data in getdata function
   function getData() {
-    axios.get(`http://jsonplaceholder.typicode.com/photos/?_limit=12&_page=${page}`)
+    axios.get(`https://jsonplaceholder.typicode.com/photos/?_limit=12&_page=${page}`)
       .then((result) => {
         setData((pre) => [...pre, ...result.data]);
       }).catch((err) => {

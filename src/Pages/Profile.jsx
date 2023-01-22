@@ -17,13 +17,13 @@ const Profile = () => {
 
   const getData = () => {
     axios
-      .get(`http://jsonplaceholder.typicode.com/users/1`)
+      .get(`https://jsonplaceholder.typicode.com/users/1`)
       .then((res) => setProfileData(res.data));
   };
 
   function postData() {
     axios
-      .get(`http://jsonplaceholder.typicode.com/photos/`)
+      .get(`https://jsonplaceholder.typicode.com/photos/`)
       .then((res) => {
         setPost(res.data);
       })
