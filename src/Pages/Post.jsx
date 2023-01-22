@@ -7,7 +7,7 @@ import axios from "axios";
 function Posts() {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
-  // i am calling the initail data in getdata function
+  // calling the initial data in getdata function
   function getData() {
     axios.get(`http://jsonplaceholder.typicode.com/photos/?_limit=12&_page=${page}`)
       .then((result) => {

@@ -4,6 +4,12 @@
     align-items: center;
     width: 70vw;
     margin: auto;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    line-height: 20px;
+    Color:#8e8e8e;
 }
 .footer2{
     display: flex;
@@ -12,4 +18,16 @@
     gap: 10px;
     width: 70vw;
     margin: auto;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    line-height: 20px;
+    Color:#8e8e8e;
+}
+.footer2_select{
+    border: none;
+    background: none;
+    Color:#8e8e8e;
+    font-family: "Segoe UI";
 }

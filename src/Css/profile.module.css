@@ -17,8 +17,8 @@
   align-items: center;
 }
 .profile_image {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 .profile_info {
@@ -84,4 +84,23 @@
 .profile_info_data > div > span:last-child:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+.routing{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 125px;
+}
+
+.routing_link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  line-height: 20px;
+  color:#575757;
+
 }

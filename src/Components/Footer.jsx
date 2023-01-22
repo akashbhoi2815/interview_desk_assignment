@@ -23,7 +23,11 @@ const Footer = () => {
     <div >
       <div className={styles.footer1}>{arr.length > 0 && arr.map((e) => <p key={uuidv4()}>{e}</p>)}</div>
       <div className={styles.footer2}>
-        <select name="" id=""></select>
+        <select name="" id="" className={styles.footer2_select}>
+          <option value="">English</option>
+          <option value="">Hindi</option>
+          <option value="">Marathi</option>
+        </select>
         <p >© 2023 Instagram from Meta</p>
       </div>
     </div>

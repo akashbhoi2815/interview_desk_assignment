@@ -3,8 +3,12 @@ import React, { useEffect, useState } from "react";
 import styles from "../Css/profile.module.css";
 import { FiMoreHorizontal } from "react-icons/fi";
 import { MdVerified } from "react-icons/md";
-import Posts from "./Post";
+import {IoMdGrid} from "react-icons/io";
+import {BiMoviePlay} from "react-icons/bi";
+import {AiOutlineContacts} from "react-icons/ai";
 import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
+import AllRoutes from "../Components/AllRoutes";
 
 const Profile = () => {
   const [profileData, setProfileData] = useState();
@@ -38,7 +42,9 @@ const Profile = () => {
       <div className={styles.profile}>
         <header className={styles.header}>
           <div className={styles.profile_image_div}>
+            <div style={{width:"150px",height:"150px"}}>
             <img className={styles.profile_image} src="/virat.jpeg" alt="" />
+            </div>
           </div>
           <div className={styles.profile_info}>
             <div className={styles.profile_info_username}>
@@ -73,9 +79,16 @@ const Profile = () => {
           </div>
         </header>
             <br />
-        <div>
+            <div className={styles.routing} >
+              <div><Link className={styles.routing_link} to="/"><IoMdGrid/>POSTS</Link></div>
+              <div><Link className={styles.routing_link} to="/reels"><BiMoviePlay/>REELS</Link></div>
+              <div><Link className={styles.routing_link} to="/tagged"><AiOutlineContacts/>TAGGED</Link></div>
+            </div>
+            <br />
+            <AllRoutes/>
+        {/* <div>
           <Posts />
-        </div>
+        </div> */}
         <Footer />
       </div>
     </>
